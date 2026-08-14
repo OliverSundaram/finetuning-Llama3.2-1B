@@ -255,19 +255,19 @@ swings in either direction.
 <details>
 <summary><b>MMLU-5k</b></summary>
 
-![MMLU comparison](Llama-3.2-1B-MathCOdeInstruct-5k/outputs/llama-3.2-1b-5k/assets/mmlu_5k.png)
+![MMLU comparison](outputs/charts/mmlu_5k.png)
 </details>
 
 <details>
 <summary><b>MMLU-10k</b></summary>
 
-![MMLU comparison](Llama-3.2-1B-MathCOdeInstruct-10k/outputs/llama-3.2-1b-10k/assets/mmlu_10k.png)
+![MMLU comparison](outputs/charts/mmlu_10k.png)
 </details>
 
 <details>
 <summary><b>MMLU-5k</b></summary>
 
-![MMLU comparison](Llama-3.2-1B-MathCOdeInstruct-20k/outputs/llama-3.2-1b-20k/assets/mmlu_20k.png)
+![MMLU comparison](outputs/charts/mmlu_20k.png)
 </details>
 
 
