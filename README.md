@@ -46,12 +46,9 @@ and what it costs.
 
 ## Motivation
 
-I wanted to answer a question that's easy to state but that most single-model fine-tuning write-ups
-don't actually test: **if you fine-tune a small model on a narrow domain, what happens to everything
-else it can do?** Most math/code fine-tune posts report the target benchmark going up and stop there.
-This project trains the *same* base model on the *same* dataset at three different sizes, then runs the
-*same* battery of general-purpose benchmarks against all three — plus the untouched base model — so any
-change is attributable to the fine-tuning itself, not to a different setup.
+After completing Sebastian Raschka's 7 video, 12 hour course, *Build a Large Language Model (From Scratch)* — 
+where he teaches a complete beginner in AI how to create their own LLM and fine-tune GPT2 — I naturally wanted
+to increase the scope of fine-tuning by choosing a bigger and better model, Llama3.2-1B.
 
 This was done as a self-directed project for my ML portfolio, run entirely on a single consumer GPU
 (RTX 4060, 8GB VRAM) rather than rented cloud compute — part of the point was seeing what's actually
@@ -196,8 +193,8 @@ allocator to grow memory segments instead of hunting for one large contiguous fr
 was causing the allocator to fail even with a few hundred MB technically free but fragmented.
 
 **Interrupted overnight eval.** The 5k model's overnight `lm-eval` benchmark run got cut off when the PC
-shut down partway through (it had been running long enough to trigger an idle/update shutdown). After
-restarting the machine, the process appeared to pick back up and completed normally. Since `lm-eval`
+shut down partway through (it had been running long enough to trigger a shutdown). After
+restarting the pc, the process appeared to pick back up and completed normally. Since `lm-eval`
 only writes its `results.json` after *every* task fully completes — there's no partial/incomplete
 results file — its existence was itself confirmation the run had gone the distance; cross-checked that
 the 5k results file listed the same task set as the 10k/20k runs to be sure nothing silently got skipped.
