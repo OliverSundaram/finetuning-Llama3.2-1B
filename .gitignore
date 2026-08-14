@@ -1,0 +1,31 @@
+# Virtual environment
+.venv/
+venv/
+
+# PyCharm project files (keep this out; it's local IDE config)
+.idea/
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Model weights & training artifacts — these belong on Hugging Face, not GitHub
+outputs/
+runs/
+unsloth_compiled_cache/
+*.safetensors
+*.bin
+*.pth
+
+# Eval / logging artifacts that are large or regeneratable
+.deepeval/
+
+# Secrets — never commit these
+.env
+*.token
+huggingface_token.txt
+
+# OS junk
+.DS_Store
+Thumbs.db
