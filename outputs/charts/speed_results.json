@@ -1,0 +1,170 @@
+{
+  "config": {
+    "prompt": "Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in May. How many clips did Natalia sell altogether in April and May? Solve step by step.",
+    "tokens_per_run": 256,
+    "rounds": 3,
+    "interleaved": true,
+    "dtype": "bfloat16",
+    "greedy": true,
+    "device": "NVIDIA GeForce RTX 4060",
+    "torch": "2.11.0+cu128"
+  },
+  "models": {
+    "base": {
+      "model_path": "unsloth/Llama-3.2-1B",
+      "decode_tok_s": 40.59,
+      "decode_tok_s_min": 39.28,
+      "decode_tok_s_max": 40.62,
+      "end_to_end_tok_s": 40.56,
+      "prefill_ms": 29.3,
+      "prompt_tokens": 44,
+      "generated_tokens": 256,
+      "rounds": [
+        {
+          "prompt_tokens": 44,
+          "generated_tokens": 256,
+          "prefill_s": 0.0321,
+          "total_s": 6.5236,
+          "decode_tok_s": 39.28,
+          "end_to_end_tok_s": 39.24,
+          "gpu": "51C / 2775MHz"
+        },
+        {
+          "prompt_tokens": 44,
+          "generated_tokens": 256,
+          "prefill_s": 0.0293,
+          "total_s": 6.307,
+          "decode_tok_s": 40.62,
+          "end_to_end_tok_s": 40.59,
+          "gpu": "58C / 2775MHz"
+        },
+        {
+          "prompt_tokens": 44,
+          "generated_tokens": 256,
+          "prefill_s": 0.0293,
+          "total_s": 6.3119,
+          "decode_tok_s": 40.59,
+          "end_to_end_tok_s": 40.56,
+          "gpu": "51C / 2775MHz"
+        }
+      ]
+    },
+    "5k": {
+      "model_path": "Llama-3.2-1B-MathCodeInstruct-5k/outputs/llama-3.2-1b-5k",
+      "decode_tok_s": 40.67,
+      "decode_tok_s_min": 40.47,
+      "decode_tok_s_max": 40.85,
+      "end_to_end_tok_s": 40.63,
+      "prefill_ms": 30.0,
+      "prompt_tokens": 44,
+      "generated_tokens": 256,
+      "rounds": [
+        {
+          "prompt_tokens": 44,
+          "generated_tokens": 256,
+          "prefill_s": 0.0302,
+          "total_s": 6.3309,
+          "decode_tok_s": 40.47,
+          "end_to_end_tok_s": 40.44,
+          "gpu": "53C / 2775MHz"
+        },
+        {
+          "prompt_tokens": 44,
+          "generated_tokens": 256,
+          "prefill_s": 0.0293,
+          "total_s": 6.2714,
+          "decode_tok_s": 40.85,
+          "end_to_end_tok_s": 40.82,
+          "gpu": "53C / 2775MHz"
+        },
+        {
+          "prompt_tokens": 44,
+          "generated_tokens": 256,
+          "prefill_s": 0.03,
+          "total_s": 6.3007,
+          "decode_tok_s": 40.67,
+          "end_to_end_tok_s": 40.63,
+          "gpu": "49C / 2775MHz"
+        }
+      ]
+    },
+    "10k": {
+      "model_path": "Llama-3.2-1B-MathCodeInstruct-10k/outputs/llama-3.2-1b-10k",
+      "decode_tok_s": 40.53,
+      "decode_tok_s_min": 40.45,
+      "decode_tok_s_max": 40.65,
+      "end_to_end_tok_s": 40.51,
+      "prefill_ms": 29.4,
+      "prompt_tokens": 44,
+      "generated_tokens": 256,
+      "rounds": [
+        {
+          "prompt_tokens": 44,
+          "generated_tokens": 256,
+          "prefill_s": 0.0294,
+          "total_s": 6.3332,
+          "decode_tok_s": 40.45,
+          "end_to_end_tok_s": 40.42,
+          "gpu": "55C / 2775MHz"
+        },
+        {
+          "prompt_tokens": 44,
+          "generated_tokens": 256,
+          "prefill_s": 0.0302,
+          "total_s": 6.3032,
+          "decode_tok_s": 40.65,
+          "end_to_end_tok_s": 40.61,
+          "gpu": "52C / 2775MHz"
+        },
+        {
+          "prompt_tokens": 44,
+          "generated_tokens": 256,
+          "prefill_s": 0.0292,
+          "total_s": 6.3201,
+          "decode_tok_s": 40.53,
+          "end_to_end_tok_s": 40.51,
+          "gpu": "50C / 2790MHz"
+        }
+      ]
+    },
+    "20k": {
+      "model_path": "Llama-3.2-1B-MathCodeInstruct-20k/outputs/llama-3.2-1b-20k",
+      "decode_tok_s": 40.63,
+      "decode_tok_s_min": 40.61,
+      "decode_tok_s_max": 40.67,
+      "end_to_end_tok_s": 40.6,
+      "prefill_ms": 29.7,
+      "prompt_tokens": 44,
+      "generated_tokens": 256,
+      "rounds": [
+        {
+          "prompt_tokens": 44,
+          "generated_tokens": 256,
+          "prefill_s": 0.0295,
+          "total_s": 6.3088,
+          "decode_tok_s": 40.61,
+          "end_to_end_tok_s": 40.58,
+          "gpu": "57C / 2775MHz"
+        },
+        {
+          "prompt_tokens": 44,
+          "generated_tokens": 256,
+          "prefill_s": 0.0308,
+          "total_s": 6.3005,
+          "decode_tok_s": 40.67,
+          "end_to_end_tok_s": 40.63,
+          "gpu": "51C / 2775MHz"
+        },
+        {
+          "prompt_tokens": 44,
+          "generated_tokens": 256,
+          "prefill_s": 0.0297,
+          "total_s": 6.3062,
+          "decode_tok_s": 40.63,
+          "end_to_end_tok_s": 40.6,
+          "gpu": "52C / 2775MHz"
+        }
+      ]
+    }
+  }
+}
