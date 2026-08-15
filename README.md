@@ -63,10 +63,13 @@ Llama-3.2-1B-MathCodeInstruct/
 │   ├── mathcodeinstruct-eval.json     # ONE shared held-out eval set, used by all three
 │   └── prepare_data.ipynb             # filtering, chat-template formatting, splitting
 ├── Llama-3.2-1B-MathCodeInstruct-5k/
-│   ├── 01_training.ipynb
-│   └── outputs/llama-3.2-1b-5k/       # merged 16-bit model
+│   └── 01_training.ipynb
 ├── Llama-3.2-1B-MathCodeInstruct-10k/  # same layout, 10k subset
 ├── Llama-3.2-1B-MathCodeInstruct-20k/  # same layout, 20k subset
+├── outputs/charts
+│   ├── mmlu_*k.png                    # per-subset MMLU accuracy per subject
+│   ├── speed_results.json             # tokens per second for base model and subsets
+│   └── table_*k.md                    # Benchmark accuracys per-subset
 ├── visualize_results.py               # builds MMLU-by-subject chart + comparison table per subset
 ├── measure_speed.py                   # decode-throughput benchmark across all 4 models
 ├── pushing_to_hf.py                   # pushes each merged model + card to the Hub
